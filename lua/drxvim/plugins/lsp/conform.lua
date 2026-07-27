@@ -2,6 +2,7 @@ return {
 	formatters_by_ft = {
 		lua = { "stylua" },
 		php = { "pretty-php" },
+		odin = { "odinfmt" },
 		typst = { "prettypst" },
 		typescript = { "prettierd" },
 		svelte = { "prettierd", "biome" },
