@@ -3,6 +3,7 @@ return {
 		lua = { "stylua" },
 		php = { "pretty-php" },
 		odin = { "odinfmt" },
+		ocaml = { "ocamlformat" },
 		typst = { "prettypst" },
 		typescript = { "prettierd" },
 		svelte = { "prettierd", "biome" },

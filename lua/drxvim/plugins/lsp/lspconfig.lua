@@ -648,4 +648,21 @@ lspconfig.tinymist.setup {
 	root_dir = util.root_pattern ".git",
 }
 
+-- ocaml lsp setup --
+lspconfig.ocamllsp.setup {
+	on_init = M.on_init,
+	on_attach = M.on_attach,
+	capabilities = M.capabilities,
+
+	cmd = { "ocamllsp" },
+
+	filetypes = {
+		"ocaml",
+		"ocaml.interface",
+		"dune",
+	},
+
+	root_dir = util.root_pattern("dune-project", "dune-workspace", ".git"),
+}
+
 return M
